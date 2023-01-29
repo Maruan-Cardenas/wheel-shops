@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import styles from './Iframe.module.scss'
-import { motion } from 'framer-motion'
 import Link from 'next/link'
 
 const myLoader = ({ src, width, quality }) => {
@@ -12,7 +11,6 @@ const AmazonArticle = ({ iframe, image, title, description, link }) => {
   const [seeMore, setSeeMore] = useState(false)
   return (
     <Link href={link}>
-
       <section className={styles.amazonArticle}>
         <h3>{title}</h3>
         <Image
@@ -22,22 +20,11 @@ const AmazonArticle = ({ iframe, image, title, description, link }) => {
           src={image}
           alt={title}
         />
-        <motion.ul
-          animate={{ height: seeMore ? 'auto' : '9rem' }}
-          transition={{ duration: 1 }}
-        >
-          {
-          description.map((desc, index) => (
-            <li key={index}>{desc}</li>
-          ))
-        }
-        </motion.ul>
+        <div className={styles.description}>{description}</div>
         <button onClick={() => setSeeMore(!seeMore)}>
-          {
-          seeMore ? 'Ver menos' : 'Ver más...'
-        }
+          'Ver más...'
         </button>
-        <div dangerouslySetInnerHTML={{ __html: iframe }} />
+        <div className={styles.iframe} dangerouslySetInnerHTML={{ __html: iframe }} />
       </section>
     </Link>
   )
