@@ -6,7 +6,10 @@ import styles from '../../styles/Home.module.scss'
 const Maciza = () => {
   const ARTICLE = ARTICLES.filter(fil => fil.tags.includes('maciza'))
   return (
-    <Layout>
+    <Layout
+      title='Ruedas Macizas para patinetes eléctricos'
+      description='Comprar ruedas macizas para patinetes eléctricos en nuestra tienda en línea. Ofrecemos una amplia selección de ruedas solidas de alta calidad para mejorar tu experiencia de movilidad.'
+    >
       <section className={styles.main}>
         <h1 className={styles.title}>Ruedas macizas para patinetes eléctricos</h1>
         <p>Ofrecemos una amplia selección de ruedas sólidas de alta calidad para patinetes eléctricos. Ofrecen una mayor estabilidad, seguridad, durabilidad y suavidad en comparación con las ruedas neumáticas. Son más fáciles de mantener, ligeras y personalizables.</p>

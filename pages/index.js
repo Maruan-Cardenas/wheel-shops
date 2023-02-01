@@ -5,7 +5,10 @@ import { ARTICLES } from '../data/articles'
 
 export default function Home () {
   return (
-    <Layout>
+    <Layout
+      title='Ruedas para patinetes eléctricos'
+      description='Comprar ruedas para patinetes eléctricos en nuestra tienda en línea. Ofrecemos una amplia selección de ruedas de alta calidad para las principales marcas: vivobike, ducati, cetotec, gotrax, xiaomi, dever, alfawise, hiboy, viron, wayscral, wispeed, zwheel. Mejorar tu experiencia de movilidad.'
+    >
       <section className={styles.main}>
         <h1 className={styles.title}>Ruedas para patinetes eléctricos</h1>
         <p>
