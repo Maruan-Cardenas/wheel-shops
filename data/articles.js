@@ -21,6 +21,6 @@ export const ARTICLES = [
     description: 'NEUMÁTICOS MACIZOS PREMIUM ●● Entre los accesorios para patinete que puedes necesitar, están las ruedas para patinete eléctrico MPK85 (2 unidades), estos recambios son el mejor neumático a prueba de pinchazos para scooters eléctricos con ruedas de 8,5 pulgadas. Es el repuesto perfecto para tu patinete eléctrico, que reemplazará a tu neumático inflable de 8 1 ⁄ 2 x2 o 50/75-6,1 pulgadas',
     iframe: '<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-eu.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=maruan01-21&language=es_ES&o=30&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B09QT7KTL5&linkId=fea59a009eb97ab8aac1b64ca8b310ed"></iframe>',
     link: 'https://amzn.to/3JjQ0it',
-    tags: ['maciza', 'vivobike', 'xiaomi', '10 pulgaas']
+    tags: ['maciza', 'vivobike', 'ducati', 'cetotec', 'gotrax', 'xiaomi', 'dever', 'alfawise', 'hiboy', 'viron', 'wayscral', 'wispeed', 'zwheel', '8.5 pulgaas']
   }
 ]
