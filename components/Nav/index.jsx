@@ -38,6 +38,23 @@ const Nav = () => {
           )
         }
       </div>
+      <div
+        className={styles.section}
+        onMouseEnter={() => setIsOpen('size')}
+        onMouseLeave={() => setIsOpen(false)}
+      >
+        <div className={styles.title}>
+          <span>Tamaño de rueda</span>
+          <Arrow />
+        </div>
+        {
+          isOpen === 'size' && (
+            <ul>
+              <li> <Link href='/size/8.5-pulgadas'>8.5 pulgadas</Link></li>
+            </ul>
+          )
+        }
+      </div>
     </nav>
   )
 }

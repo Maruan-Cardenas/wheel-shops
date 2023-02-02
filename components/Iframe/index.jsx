@@ -10,7 +10,7 @@ const myLoader = ({ src, width, quality }) => {
 const AmazonArticle = ({ iframe, image, title, description, link }) => {
   const [seeMore, setSeeMore] = useState(false)
   return (
-    <Link href={link}>
+    <Link href={link} target='_black'>
       <section className={styles.amazonArticle}>
         <h3>{title}</h3>
         <Image
