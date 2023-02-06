@@ -34,6 +34,7 @@ const Nav = () => {
           isOpen === 'type' && (
             <ul>
               <li> <Link href='/tipo-de-rueda/maciza'>Macizas</Link></li>
+              <li> <Link href='/tipo-de-rueda/neumatica'>Neumáticas</Link></li>
             </ul>
           )
         }
@@ -51,6 +52,7 @@ const Nav = () => {
           isOpen === 'size' && (
             <ul>
               <li> <Link href='/size/8.5-pulgadas'>8.5 pulgadas</Link></li>
+              <li> <Link href='/size/10-pulgadas'>10 pulgadas</Link></li>
             </ul>
           )
         }
