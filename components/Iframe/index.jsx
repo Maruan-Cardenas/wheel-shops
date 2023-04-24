@@ -1,14 +1,12 @@
-import { useState } from 'react'
 import Image from 'next/image'
-import styles from './Iframe.module.scss'
 import Link from 'next/link'
+import styles from './Iframe.module.scss'
 
 const myLoader = ({ src, width, quality }) => {
   return `https://m.media-amazon.com/${src}?w=${width}&q=${quality || 75}`
 }
 
-const AmazonArticle = ({ iframe, image, title, description, link }) => {
-  const [seeMore, setSeeMore] = useState(false)
+const AmazonArticle = ({ iframe, image, title, link }) => {
   return (
     <Link href={link} target='_black'>
       <section className={styles.amazonArticle}>
@@ -20,10 +18,6 @@ const AmazonArticle = ({ iframe, image, title, description, link }) => {
           src={image}
           alt={title}
         />
-        <div className={styles.description}>{description}</div>
-        <button onClick={() => setSeeMore(!seeMore)}>
-          'Ver más...'
-        </button>
         <div className={styles.iframe} dangerouslySetInnerHTML={{ __html: iframe }} />
       </section>
     </Link>

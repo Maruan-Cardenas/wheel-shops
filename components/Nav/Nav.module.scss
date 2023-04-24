@@ -1,12 +1,12 @@
+@import "../../styles/colors.scss";
 .nav {
   position: sticky;
   top: 0;
   left: 0;
-  background-color: white;
-  color: black;
+  background-color: $blue1;
+  color: white;
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid black;
 
   .section {
     position: relative;
@@ -35,7 +35,10 @@
       padding: .5rem;
       width: 100%;
       background-color: white;
-      box-shadow: 0px 0px 3px black;
+      border: 1px solid $blue1;
+      gap: .5rem;
+      color: black;
+      border-radius: .3rem;
     }
   }
 }

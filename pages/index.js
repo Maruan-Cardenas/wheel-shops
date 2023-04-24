@@ -1,7 +1,7 @@
 import AmazonArticle from '../components/Iframe'
 import Layout from '../components/Layout'
-import styles from '../styles/Home.module.scss'
 import { ARTICLES } from '../data/articles'
+import styles from '../styles/Home.module.scss'
 
 export default function Home () {
   return (
@@ -10,9 +10,9 @@ export default function Home () {
       description='Comprar ruedas para patinetes eléctricos en nuestra tienda en línea. Ofrecemos una amplia selección de ruedas de alta calidad para las principales marcas: vivobike, ducati, cetotec, gotrax, xiaomi, dever, alfawise, hiboy, viron, wayscral, wispeed, zwheel. Mejorar tu experiencia de movilidad.'
     >
       <section className={styles.main}>
-        <h1 className={styles.title}>Ruedas para patinetes eléctricos</h1>
+        <h1 className={styles.title}>¿Buscas recambios para tú patinete eléctrico?</h1>
         <p>
-          En nuestra tienda encontrarás <strong>las mejores ruedas para tu patinete eléctrico de las principales marcas como Xiaomi, Ninebot, Segway</strong>, entre otras. Ofrecemos una amplia variedad de opciones de tamaño y diseño para adaptarse a tus necesidades de movilidad.
+          En nuestra tienda encontrarás los mejores recambios para tu patinete eléctrico. Tenemos ruedas, baterías, cargadores, motores, frenos, guardabarros, etc...
         </p>
         <div className={styles.iframe}>
           {
