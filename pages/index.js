@@ -1,9 +1,10 @@
-import AmazonArticle from '../components/Iframe'
+import Card from '../components/Card'
 import Layout from '../components/Layout'
-import { ARTICLES } from '../data/articles'
+import { useGetAllArticles } from '../firebase/methods/get'
 import styles from '../styles/Home.module.scss'
 
 export default function Home () {
+  const articles = useGetAllArticles('articles')
   return (
     <Layout
       title='Ruedas para patinetes eléctricos'
@@ -11,22 +12,15 @@ export default function Home () {
     >
       <section className={styles.main}>
         <h1 className={styles.title}>¿Buscas recambios para tú patinete eléctrico?</h1>
-        <p>
+        <p className={styles.description}>
           En nuestra tienda encontrarás los mejores recambios para tu patinete eléctrico. Tenemos ruedas, baterías, cargadores, motores, frenos, guardabarros, etc...
         </p>
-        <div className={styles.iframe}>
+        <div className={styles.cardBox}>
           {
-          ARTICLES.map((article) => (
-            <AmazonArticle
-              key={article.id}
-              iframe={article.iframe}
-              title={article.title}
-              description={article.description}
-              image={article.image}
-              link={article.link}
-            />
-          ))
-        }
+            articles.map((article) => (
+              <Card article={article} key={article.id} />
+            ))
+          }
         </div>
       </section>
     </Layout>

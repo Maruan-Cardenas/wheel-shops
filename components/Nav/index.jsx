@@ -23,7 +23,7 @@ const Nav = () => {
       </div>
       <div
         className={styles.section}
-        onMouseEnter={() => setIsOpen('type')}
+        onMouseEnter={() => setIsOpen('category')}
         onMouseLeave={() => setIsOpen(false)}
       >
         <div className={styles.title}>
@@ -31,10 +31,10 @@ const Nav = () => {
           <Arrow />
         </div>
         {
-          isOpen === 'type' && (
+          isOpen === 'category' && (
             <ul>
-              <li> <Link href='/tipo-de-rueda/maciza'>Macizas</Link></li>
-              <li> <Link href='/tipo-de-rueda/neumatica'>Neumáticas</Link></li>
+              <li> <Link href='/recambios/ruedas'>Ruedas</Link></li>
+              <li> <Link href='/recambios/baterias'>baterias</Link></li>
             </ul>
           )
         }
