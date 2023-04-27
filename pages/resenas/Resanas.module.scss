@@ -1,0 +1,222 @@
+@import "../../styles/colors.scss";
+
+.review {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    width: 100%;
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+
+        @media screen and (min-width: 768px) {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            width: 60vw;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            padding: 1rem 0;
+            width: 90vw;
+
+            @media screen and (min-width: 768px) {
+                grid-column: 1/3;
+                width: 60vw;
+            }
+        }
+
+        .paragraph {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 0;
+
+            p {
+                font-size: 1.1em;
+
+                strong {
+                    font-weight: bold;
+                }
+            }
+
+            a {
+                background-color: $yellow;
+                text-decoration: none;
+                border-radius: .3rem;
+                color: black;
+                font-weight: bold;
+                font-size: 1.5rem;
+                padding: 1rem;
+            }
+        }
+
+        img {
+            width: 20rem;
+            height: 20rem;
+            object-fit: cover;
+            padding-bottom: 1rem;
+        }
+
+    }
+
+    .images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        width: 90vw;
+
+        @media screen and (min-width: 768px) {
+            grid-template-columns: repeat(6, 1fr);
+            gap: .5rem;
+            width: 60vw;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: 1px solid black;
+            border-radius: .3rem;
+        }
+    }
+
+    .characteristics, .advantages {
+        width: 90vw;
+
+        @media screen and (min-width: 768px) {
+            width: 60vw;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 1rem 0;
+        }
+        ul {
+            padding: 1rem;
+            li {
+                list-style: inside;
+                strong {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .characteristics{
+        background-color: $orange;
+    }
+
+    .description {
+        width: 90vw;
+
+        @media screen and (min-width: 768px) {
+            width: 60vw;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 1rem 0;
+        }
+
+        p {
+            padding: 1rem 0;
+        }
+    }
+
+    .buy {
+        width: 90vw;
+        background-color: $red;
+        color: white;
+
+        @media screen and (min-width: 768px) {
+            width: 60vw;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 1rem 0;
+        }
+        div {
+            display: flex;
+            img {
+                width: 10rem;
+                height: 13rem;
+            }
+            p {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                padding: 0 1rem;
+                
+                a {
+                    background-color: $yellow;
+                    text-decoration: none;
+                    border-radius: .3rem;
+                    color: black;
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+
+    .video {
+        width: 90vw;
+        
+        @media screen and (min-width: 768px) {
+            width: 60vw;
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 1rem 0;
+        }
+        iframe {
+            aspect-ratio: 16/9;
+        }
+    }
+    .advantages {
+        ul {
+            li {
+                list-style: none;
+                padding: .5rem 0;
+            }
+        }
+    }
+
+    .law {
+        background-color: $orange;
+        width: 90vw;
+
+        @media screen and (min-width: 768px) {
+            width: 60vw;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 1rem 0;
+        }
+
+        p {
+            padding: 1rem 0;
+        }
+        ul {
+            li {
+                padding: .5rem 1rem;
+            }
+        }
+    }
+}

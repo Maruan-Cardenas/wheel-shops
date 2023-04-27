@@ -27,7 +27,7 @@ const Nav = () => {
         onMouseLeave={() => setIsOpen(false)}
       >
         <div className={styles.title}>
-          <span>Tipo de rueda</span>
+          <span>Recambios</span>
           <Arrow />
         </div>
         {
@@ -45,14 +45,15 @@ const Nav = () => {
         onMouseLeave={() => setIsOpen(false)}
       >
         <div className={styles.title}>
-          <span>Tamaño de rueda</span>
+          <span>Reseñas</span>
           <Arrow />
         </div>
         {
           isOpen === 'size' && (
             <ul>
-              <li> <Link href='/size/8.5-pulgadas'>8.5 pulgadas</Link></li>
-              <li> <Link href='/size/10-pulgadas'>10 pulgadas</Link></li>
+              <li>
+                <Link href='/resenas/smartgyro-speedway'>SmartGyro Speedway v3.0</Link>
+              </li>
             </ul>
           )
         }

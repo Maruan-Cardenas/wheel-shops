@@ -92,6 +92,15 @@ const Gestion = () => {
                 <label for='cargador'>
                   Cargador
                 </label>
+                <Field
+                  type='radio'
+                  name='category'
+                  value='patinetes'
+                  id='patinetes'
+                />
+                <label for='patinetes'>
+                  Patinetes
+                </label>
               </div>
               <div class={styles.inputBox} role='group' aria-labelledby='my-radio-group'>
                 <span>
