@@ -151,7 +151,15 @@ const Gestion = () => {
                 <label for='cecotec'>
                   Cecotec
                 </label>
-
+                <Field
+                  type='checkbox'
+                  name='Brand'
+                  value='quickwheel'
+                  id='quickwheel'
+                />
+                <label for='quickwheel'>
+                  QuickWheel
+                </label>
               </div>
               <div className={styles.buttons}>
                 <button

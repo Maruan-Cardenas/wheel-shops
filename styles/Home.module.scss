@@ -1,46 +1,141 @@
-.main {
+.head {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
-  color: black;
+  gap: 1rem;
+  margin-top: 2rem;
 
-  .title {
-    font-weight: bold;
-    font-size: 2.5em;
-    padding: 2rem 1rem;
-    line-height: 2.5rem;
-    text-align: center;
+  .title,
+  .paragraph {
+    width: 100vw;
 
     @media screen and (min-width: 768px) {
-      padding: 3rem 1rem;
       width: 60vw;
     }
   }
 
-  .description {
-    padding: 1rem;
-    border-radius: 1rem;
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem 0;
 
-    @media screen and (min-width: 768px) {
-      margin-bottom: 3rem;
-      width: 60vw;
-    }
+  }
 
+  .paragraph {
     strong {
       font-weight: bold;
     }
   }
 
-  .cardBox {
-    display: flex;
-    flex-direction: column;
-    gap: 5vh;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+
+  h2,
+  .reviewsContainer {
+    width: 100vw;
 
     @media screen and (min-width: 768px) {
-      display: grid;
+      width: 60vw;
+    }
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 1rem 0;
+  }
+
+  .reviewsContainer {
+    display: grid;
+    height: 50vh;
+    grid-template-columns: 1fr;
+
+    @media screen and (min-width: 768px) {
       grid-template-columns: repeat(3, 1fr);
-      place-items: center;
+
+    }
+
+    .review {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      &:hover {
+        cursor: pointer;
+
+        h3 {
+          padding: 1rem 0;
+        }
+      }
+
+      a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        h3 {
+          font-size: 1.3rem;
+          text-align: center;
+          width: 100%;
+          font-weight: bold;
+          color: white;
+          background-color: rgba(0, 0, 0, 0.484);
+          backdrop-filter: blur(3px);
+          transition: padding .5s;
+        }
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          z-index: -1;
+        }
+      }
+    }
+  }
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+
+  .cardBox,
+  .title {
+    width: 100vw;
+
+    @media screen and (min-width: 768px) {
+      width: 60vw;
+    }
+  }
+
+  .title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 1rem 0;
+  }
+
+  .cardBox {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }

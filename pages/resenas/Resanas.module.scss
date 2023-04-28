@@ -10,7 +10,7 @@
     .header {
         display: flex;
         flex-direction: column;
-        width: 90vw;
+        width: 100vw;
 
         @media screen and (min-width: 768px) {
             display: grid;
@@ -22,7 +22,7 @@
             font-size: 2rem;
             font-weight: bold;
             padding: 1rem 0;
-            width: 90vw;
+            width: 100vw;
 
             @media screen and (min-width: 768px) {
                 grid-column: 1/3;
@@ -58,10 +58,14 @@
         }
 
         img {
-            width: 20rem;
-            height: 20rem;
+            width: 100vw;
+            height: 30rem;
             object-fit: cover;
             padding-bottom: 1rem;
+            @media screen and (min-width: 768px) {
+                width: 20rem;
+                height: 20rem;
+            }
         }
 
     }
@@ -70,7 +74,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         place-items: center;
-        width: 90vw;
+        width: 100vw;
 
         @media screen and (min-width: 768px) {
             grid-template-columns: repeat(6, 1fr);
@@ -88,7 +92,7 @@
     }
 
     .characteristics, .advantages {
-        width: 90vw;
+        width: 100vw;
 
         @media screen and (min-width: 768px) {
             width: 60vw;
@@ -114,7 +118,7 @@
     }
 
     .description {
-        width: 90vw;
+        width: 100vw;
 
         @media screen and (min-width: 768px) {
             width: 60vw;
@@ -132,7 +136,7 @@
     }
 
     .buy {
-        width: 90vw;
+        width: 100vw;
         background-color: $red;
         color: white;
 
@@ -172,7 +176,7 @@
     }
 
     .video {
-        width: 90vw;
+        width: 100vw;
         
         @media screen and (min-width: 768px) {
             width: 60vw;
@@ -198,7 +202,7 @@
 
     .law {
         background-color: $orange;
-        width: 90vw;
+        width: 100vw;
 
         @media screen and (min-width: 768px) {
             width: 60vw;

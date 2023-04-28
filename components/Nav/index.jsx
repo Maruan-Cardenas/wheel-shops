@@ -52,7 +52,14 @@ const Nav = () => {
           isOpen === 'size' && (
             <ul>
               <li>
-                <Link href='/resenas/smartgyro-speedway'>SmartGyro Speedway v3.0</Link>
+                <Link href='/resenas/smartgyro-speedway'>
+                  SmartGyro Speedway v3.0
+                </Link>
+              </li>
+              <li>
+                <Link href='/resenas/quickwheel-explorer'>
+                  QuickWheel Explorer
+                </Link>
               </li>
             </ul>
           )

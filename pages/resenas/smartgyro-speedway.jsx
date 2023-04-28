@@ -27,7 +27,10 @@ import SmartgyroSpeedwayImg from '../../public/resenas/smartgyro-speedway/smartg
 const SmartgyroSpeedway = () => {
   const [image, setImage] = useState(SmartgyroSpeedwayImg)
   return (
-    <Layout>
+    <Layout
+      title='SmartGyro Speedway V3.0 | Mejor Tecnología | Patinete Eléctrico'
+      description='Descubre el patinete eléctrico SmartGyro Speedway, un modelo todoterreno que te llevará a cualquier lugar. Con neumáticos de 10", sistema de frenos de disco y suspensión en ambas ruedas, podrás conducir con seguridad en cualquier terreno. Además, su batería de larga duración y potente motor te permitirán recorrer largas distancias sin problema.'
+    >
       <div className={styles.review}>
         <section className={styles.header}>
           <h1 className={styles.title}>Patinete Smartgyro Speedway V3.0</h1>
@@ -202,7 +205,7 @@ const SmartgyroSpeedway = () => {
           </section>
         </div>
         <section className={styles.video}>
-          <h2>Review del SMARTGYRO SPEEDWAY V.3</h2>
+          <h2>Review del SMARTGYRO SPEEDWAY v.3.0</h2>
           <iframe src='https://www.youtube.com/embed/bafY9q-XuI0' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen />
         </section>
       </div>
