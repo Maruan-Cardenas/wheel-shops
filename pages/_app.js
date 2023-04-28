@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react'
 import Script from 'next/script'
 import '../styles/globals.css'
 
@@ -18,6 +19,7 @@ export default function App ({ Component, pageProps }) {
         `}
       </Script>
       <Component {...pageProps} />
+      <Analytics />
     </>
   )
 }
