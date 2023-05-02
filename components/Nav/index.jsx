@@ -9,6 +9,7 @@ const Nav = () => {
     <nav className={styles.nav}>
       <div
         className={styles.section}
+        onClick={() => setIsOpen('category')}
         onMouseEnter={() => setIsOpen('category')}
         onMouseLeave={() => setIsOpen(false)}
       >
@@ -27,7 +28,8 @@ const Nav = () => {
       </div>
       <div
         className={styles.section}
-        onMouseEnter={() => setIsOpen('size')}
+        onClick={() => setIsOpen('review')}
+        onMouseEnter={() => setIsOpen('review')}
         onMouseLeave={() => setIsOpen(false)}
       >
         <div className={styles.title}>
@@ -35,7 +37,7 @@ const Nav = () => {
           <Arrow />
         </div>
         {
-          isOpen === 'size' && (
+          isOpen === 'review' && (
             <ul>
               <li>
                 <Link href='/resenas/smartgyro-speedway'>
@@ -45,6 +47,11 @@ const Nav = () => {
               <li>
                 <Link href='/resenas/quickwheel-explorer'>
                   QuickWheel Explorer
+                </Link>
+              </li>
+              <li>
+                <Link href='/resenas/xiaomi-electric-scooter-3-lite'>
+                  Xiaomi Scooter 3 Lite
                 </Link>
               </li>
             </ul>

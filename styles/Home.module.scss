@@ -8,7 +8,7 @@
 
   .title,
   .paragraph {
-    width: 100vw;
+    width: 95vw;
 
     @media screen and (min-width: 768px) {
       width: 60vw;
@@ -39,7 +39,7 @@
 
   h2,
   .reviewsContainer {
-    width: 100vw;
+    width: 95vw;
 
     @media screen and (min-width: 768px) {
       width: 60vw;
@@ -128,7 +128,10 @@
   .title {
     font-size: 1.8rem;
     font-weight: bold;
-    padding: 1rem 0;
+    padding: 1rem;
+    @media screen and (min-width: 768px) {
+      padding: 1rem 0;
+    }
   }
 
   .cardBox {
@@ -136,6 +139,7 @@
     grid-template-columns: 1fr;
     gap: 1rem;
     margin-top: 2rem;
+    place-items: center;
 
     @media screen and (min-width: 768px) {
       grid-template-columns: repeat(3, 1fr);

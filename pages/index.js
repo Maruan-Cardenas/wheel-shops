@@ -6,6 +6,7 @@ import { myLoader } from '../components/myLoader'
 import { useGetAllArticles } from '../firebase/methods/get'
 import quickWheelExplorer from '../public/resenas/quickwheel-explorer/quickwheel-explorer-2.jpg'
 import smartgyroSpeedway from '../public/resenas/smartgyro-speedway/smartgyro-speedway-11.jpg'
+import xiaomiScooter3Lite from '../public/resenas/xiaomi-electric-scooter-3-lite/xiaomi-electric-scooter-3-lite-2.jpg'
 import styles from '../styles/Home.module.scss'
 
 export default function Home () {
@@ -36,6 +37,12 @@ export default function Home () {
             <Link href='/resenas/quickwheel-explorer'>
               <h3>QuickWheel Explorer</h3>
               <Image width={0} height={0} loader={myLoader} src={quickWheelExplorer} alt='Smartgyro Speedway' />
+            </Link>
+          </article>
+          <article className={styles.review}>
+            <Link href='/resenas/xiaomi-electric-scooter-3-lite'>
+              <h3>Xiaomi Scooter 3 Lite</h3>
+              <Image width={0} height={0} loader={myLoader} src={xiaomiScooter3Lite} alt='Xiaomi Electric Scooter 3 Lite' />
             </Link>
           </article>
         </div>
