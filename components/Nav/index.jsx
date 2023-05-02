@@ -9,20 +9,6 @@ const Nav = () => {
     <nav className={styles.nav}>
       <div
         className={styles.section}
-        onMouseEnter={() => setIsOpen('marca')}
-        onMouseLeave={() => setIsOpen(false)}
-      >
-        <div className={styles.title} data-arrow='marca'> Marcas <Arrow /></div>
-        {
-          isOpen === 'marca' && (
-            <ul>
-              <li> <Link href='/marca/xiaomi'>Xiaomi</Link></li>
-            </ul>
-          )
-        }
-      </div>
-      <div
-        className={styles.section}
         onMouseEnter={() => setIsOpen('category')}
         onMouseLeave={() => setIsOpen(false)}
       >
