@@ -1,6 +1,7 @@
 @import "../../styles/colors.scss";
 
 .review {
+    color: black;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -179,7 +180,6 @@
                 @media screen and (min-width: 768px) {
                     width: 15rem;
                     height: 20rem;
-                    background-color: beige;
                 }
             }
 
