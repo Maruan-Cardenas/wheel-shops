@@ -18,10 +18,13 @@ const Ruedas = () => {
         <div className={styles.cardBox}>
           {
             articles.map((article) => (
-              <Card article={article} key={article.id} />
+              <Card article={article} key={article.id} h2 />
             ))
           }
         </div>
+      </section>
+      <section className={styles.changeWheel}>
+        <h2 className={styles.title}>Como cambiar las ruedas de tu patinete eléctrico</h2>
       </section>
     </Layout>
   )

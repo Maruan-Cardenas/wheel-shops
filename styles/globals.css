@@ -113,6 +113,10 @@ em {
   color: inherit;
 }
 
+strong {
+  font-weight: bold;
+}
+
 h1,
 h2,
 h3,

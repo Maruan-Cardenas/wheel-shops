@@ -7,6 +7,8 @@ import { useGetAllArticles } from '../firebase/methods/get'
 import quickWheelExplorer from '../public/resenas/quickwheel-explorer/quickwheel-explorer-2.jpg'
 import smartgyroSpeedway from '../public/resenas/smartgyro-speedway/smartgyro-speedway-11.jpg'
 import xiaomiScooter3Lite from '../public/resenas/xiaomi-electric-scooter-3-lite/xiaomi-electric-scooter-3-lite-2.jpg'
+import batteries from '../public/spare-parts/batteries/batterie.jpg'
+import wheel from '../public/spare-parts/wheel/rueda.jpg'
 import styles from '../styles/Home.module.scss'
 
 export default function Home () {
@@ -25,7 +27,7 @@ export default function Home () {
         </p>
       </section>
       <section className={styles.reviews}>
-        <h2 className={styles.title}>Análisis de los mejores patinetes eléctricos del 2023</h2>
+        <h2 className={styles.title}>Análisis de los mejores scooters eléctricos del 2023</h2>
         <div className={styles.reviewsContainer}>
           <article className={styles.review}>
             <Link href='/resenas/smartgyro-speedway'>
@@ -49,12 +51,31 @@ export default function Home () {
       </section>
       <section className={styles.products}>
         <h2 className={styles.title}>Patinetes eléctricos más vendidos</h2>
+        <p className={styles.description}>Estos son los <strong>Patinetes Eléctricos</strong> más vendidos. Haz clic en ellos para conocer sus características o leer las opiniones de los usuarios.</p>
         <div className={styles.cardBox}>
           {
             articlesPatinetes.map((article) => (
-              <Card article={article} key={article.id} />
+              <Card article={article} key={article.id} h3 />
             ))
           }
+        </div>
+      </section>
+      <section className={styles.spareParts}>
+        <h2 className={styles.title}>Recambios para Patinetes eléctricos</h2>
+        <p className={styles.description}>¿Necesitas un recambio para tu patinete eléctrico? Aquí encontrarás los mejores recambios para tu patinete eléctrico.</p>
+        <div className={styles.partsBox}>
+          <article className={styles.parts}>
+            <Link href='/recambios/baterias'>
+              <h3>Baterias para Scooter</h3>
+              <Image width={0} height={0} loader={myLoader} src={batteries} alt='Bateria para Patinete Electrico' />
+            </Link>
+          </article>
+          <article className={styles.parts}>
+            <Link href='/recambios/ruedas'>
+              <h3>Ruedas para Scooter</h3>
+              <Image width={0} height={0} loader={myLoader} src={wheel} alt='Ruedas para Patinete Electrico' />
+            </Link>
+          </article>
         </div>
       </section>
     </Layout>

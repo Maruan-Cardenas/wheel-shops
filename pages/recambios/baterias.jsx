@@ -18,7 +18,7 @@ const Baterias = () => {
         <div className={styles.cardBox}>
           {
             articles.map((article) => (
-              <Card article={article} key={article.id} />
+              <Card article={article} key={article.id} h2 />
             ))
           }
         </div>

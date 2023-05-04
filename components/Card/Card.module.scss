@@ -1,19 +1,21 @@
 @import '../../styles/colors.scss';
 .card {
+    position: relative;
     display: flex;
     flex-direction: column;
     border-radius: .5rem;
     border: 2px solid $orange;
-    width: 90vw;
+    width: 15rem;
     overflow: hidden;
-    height: 25rem;
+    height: 17rem;
     transition: transform .5s, box-shadow .5s;
-    @media screen and (min-width: 768px) {
-        width: 15rem;
-    }
+
     &:hover {
         box-shadow: 0 0 1rem $orange;
         transform: scale(0.95);
+        h2, h3 {
+            opacity: 0.5;
+        }
     }
     
     img {
@@ -21,17 +23,36 @@
         height: 15rem;
         object-fit: contain;
     }
+    .available {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 0 0 1rem 0;
+        background-color: green;
+        color: white;
+        font-weight: bold;
+        padding: .3rem;
+        z-index: 10;
+    }
 
-    h2 {
+    h2, 
+    h3 {
         font-size: 1.1rem;
         font-weight: bold;
         color: black;
         padding: .5rem;
         text-align: center;
-        height: 8rem;
+        height: 15rem;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
+        position: absolute;
+        top: 0;
+        transition: opacity .5s;
+        background-color: rgba(0, 0, 0, 0.334);
+        color: white;
+        text-align: center;
     }
 
     .price {

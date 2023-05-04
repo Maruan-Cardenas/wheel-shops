@@ -22,11 +22,6 @@
 
   }
 
-  .paragraph {
-    strong {
-      font-weight: bold;
-    }
-  }
 
 }
 
@@ -68,6 +63,7 @@
       justify-content: center;
       width: 100%;
       height: 100%;
+
       &:hover {
         cursor: pointer;
 
@@ -84,6 +80,7 @@
         position: relative;
         width: 100%;
         height: 100%;
+
         h3 {
           font-size: 1.3rem;
           text-align: center;
@@ -109,7 +106,8 @@
   }
 }
 
-.products {
+.products,
+.spareParts {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -117,8 +115,9 @@
   color: black;
 
   .cardBox,
-  .title {
-    width: 100vw;
+  .title,
+  .description {
+    width: 95vw;
 
     @media screen and (min-width: 768px) {
       width: 60vw;
@@ -129,6 +128,7 @@
     font-size: 1.8rem;
     font-weight: bold;
     padding: 1rem;
+
     @media screen and (min-width: 768px) {
       padding: 1rem 0;
     }
@@ -143,6 +143,36 @@
 
     @media screen and (min-width: 768px) {
       grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+.spareParts {
+  .partsBox {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 95vw;
+    gap: 1rem;
+
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+      width: 60vw;
+    }
+
+    .parts {
+      height: 100%;
+      width: 100%;
+      h3 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        padding: 1rem 0;
+        text-align: center;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
 }

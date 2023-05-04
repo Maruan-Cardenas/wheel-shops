@@ -58,6 +58,28 @@ const Nav = () => {
           )
         }
       </div>
+      <div
+        className={styles.section}
+        onClick={() => setIsOpen('advice')}
+        onMouseEnter={() => setIsOpen('advice')}
+        onMouseLeave={() => setIsOpen(false)}
+      >
+        <div className={styles.title}>
+          <span>Consejos</span>
+          <Arrow />
+        </div>
+        {
+          isOpen === 'advice' && (
+            <ul>
+              <li>
+                <Link href='/consejos/como-cambiar-ruedas-de-scooter'>
+                  Como cambiar las ruedas de tu scooter
+                </Link>
+              </li>
+            </ul>
+          )
+        }
+      </div>
     </nav>
   )
 }
